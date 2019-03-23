@@ -7,7 +7,7 @@ import reducers from './reducers';
 import App from './components/App'
 
 var store=createStore(reducers, applyMiddleware(thunk));
-
+//applyMiddleware is used to implement the middleware
 ReactDOM.render(
 <Provider store={store}>
         <App />
