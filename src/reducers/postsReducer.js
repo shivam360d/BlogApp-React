@@ -1,6 +1,6 @@
 export default (state=[], action)=>{
-    switch(action){
-        case  'FECH_POSTS':return action.payload;
+    switch(action.type){
+        case  'FETCH_POSTS':return action.payload;
         default : return state;
     };
 };
